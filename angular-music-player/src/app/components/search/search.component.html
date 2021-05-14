@@ -1,0 +1,9 @@
+<h1 class="title">Need music?</h1>
+<p class="lead">Use the AngularSpotify to enjoy a large array of music selections from the Spotify platform.</p>
+
+<form>
+    <div class="form-group">
+        <input type="text" name="searchStr" [(ngModel)]="searchStr" 
+        (keyup)="searchMusic()" class="form-control" placeholder="Search Music...">   
+    </div>    
+</form>
