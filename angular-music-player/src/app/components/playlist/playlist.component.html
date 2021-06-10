@@ -1,0 +1,39 @@
+<span >
+    
+    <br>
+
+    <div class="image-div">
+        <img class="image-element"
+        src={{listOfSongs[currentIndex].image}} alt="image">
+    </div>
+
+    <br><br>
+
+    <mat-icon class="previous-button" (click)="previousSong()">
+        skip_previous
+    </mat-icon>
+
+    <mat-icon *ngIf="!this.isPlaying" class="play-button" (click)="playSong()">
+        play_circle_outline
+    </mat-icon>
+
+    <mat-icon *ngIf="this.isPlaying" class="pause-button" (click)="pauseSong()">
+        pause_circle_outline
+    </mat-icon>
+
+    <mat-icon class="next-button" (click)="nextSong()">
+        skip_next
+    </mat-icon>
+
+    <br><br>
+
+    <div style="padding-left: 430px;">
+        <div style="font-size: 30px; font-weight: bold;">
+            <mat-label>{{ listOfSongs[currentIndex].title }}</mat-label>
+        </div>
+        <br>
+        <div style="font-size: 24px;">
+            <mat-label>{{ listOfSongs[currentIndex].author }}</mat-label>
+        </div>
+    </div>
+</span>

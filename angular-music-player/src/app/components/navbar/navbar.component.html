@@ -1,5 +1,8 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="">AngularSpotify</a>
+    <a class="navbar-brand" href="search">
+        <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/21_Angular-512.png" width="40px"/>
+        AngularSpotify
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
         aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -8,10 +11,28 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="search">Home </a>
+                <a class="nav-link" href="search" style="padding-left:50px">
+                    <mat-icon>home</mat-icon>
+                    <span class="aligned-with-icon">
+                        Home
+                    </span>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about">About</a>
+                <a class="nav-link" href="playlist" style="padding-left:80px">
+                    <mat-icon>library_music</mat-icon>
+                    <span class="aligned-with-icon">
+                        Your Playlist
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about" style="padding-left:110px">
+                    <mat-icon>info</mat-icon>
+                    <span class="aligned-with-icon">
+                        About
+                    </span>
+                </a>
             </li>
         </ul>
     </div>
